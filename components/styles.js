@@ -10,7 +10,7 @@ const styles = StyleSheet.create ({
 		right: 0,
 	},
 	body: {
-		backgroundColor: Colors.white,
+		backgroundColor: Colors.White,
 	},
 	sectionContainer: {
 		marginTop: 32,
