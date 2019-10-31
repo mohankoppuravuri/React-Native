@@ -1,27 +1,20 @@
 import React		 				from 'react';
-import Login 						from './Login.js'
-import Home 						from './Home.js'
-import Front						from './Front.js'
-import LocationScreen 				from './LocationScreen.js'
-import MyApp						from './MyDrawerNavigator.js'
+import Farm 						from './Farm.js'
 import styles 						from './styles.js'
-import { createBottomTabNavigator } from 'react-navigation-tabs';
 import {createAppContainer} 		from 'react-navigation'
-
-const App = createAppContainer (createBottomTabNavigator (
+import { createStackNavigator } 	from 'react-navigation-stack';
+import  Test						from './Test'
+const App = createAppContainer (createStackNavigator (
   {
-	  Home: {
-		  screen: Home
+	  Test: {
+		  screen: Test
 	  },
-	  LocationScreen: {
-		  screen: LocationScreen
-	  },
-	  MyApp: {
-		  screen: MyApp
+	  Farm: {
+		  screen: Farm,
 	  }
   },
   {
-    initialRouteName: 'MyApp'
+    initialRouteName: 'Farm'
   }
 ));
 

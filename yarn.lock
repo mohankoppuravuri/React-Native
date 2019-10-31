@@ -5427,6 +5427,13 @@ react-navigation-drawer@^2.3.2:
   resolved "https://registry.yarnpkg.com/react-navigation-drawer/-/react-navigation-drawer-2.3.2.tgz#399a1709efc43cacaadd1dc2808af4a3d0c86b46"
   integrity sha512-J0+71FzDGbNnLzUBfwsSmyzFMETAdnrdaquL5YW1lm4YaHmSWfwPZ+hzLMA5SoihC4qxr+OvlVbbfL3ZO7IDRA==
 
+react-navigation-stack@^1.10.3:
+  version "1.10.3"
+  resolved "https://registry.yarnpkg.com/react-navigation-stack/-/react-navigation-stack-1.10.3.tgz#e714e442b20427f0d2d3c18fce1f9e8cfe69be0b"
+  integrity sha512-1gksFi/g/Lg9sBhgLlD0OiEB5xnatHb4C0eNMA5tli9cTVlhq375XNPIqOiTyftibBmjdApAsZFj5srUCoOu/w==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-navigation-tabs@^2.5.6:
   version "2.5.6"
   resolved "https://registry.yarnpkg.com/react-navigation-tabs/-/react-navigation-tabs-2.5.6.tgz#51f1a39b6c9525e6b5fe035945c243c04e53242b"
