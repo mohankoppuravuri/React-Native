@@ -39,10 +39,10 @@ export default class Farm extends React.Component {
 					)}
 				 
 				</Picker>
-				<View>
+				<View >
 					{this.state.samples.map(i => 
-					(<View style = {{flexDirection:'row' }}>
-						<Text> {i}</Text>
+					(<View style = {{flexDirection:'row', justifyContent: 'space-between'}}>
+						<Text style  > {i}</Text>
 						<AntDesign name = 'delete' size ={24}
 							   	   onPress = {()=>{
 										this.setState((prevState)=>{
@@ -60,8 +60,18 @@ export default class Farm extends React.Component {
 					</View>)
 					)}
 
-					<View style = {{flexDirection: 'row'}}>
-						<AntDesign name = "plus" size = {24}
+					<View style = {{flexDirection: 'row', justifyContent: 'space-between'}}>
+
+						<TextInput 	 ref =       {input => { this.textInput = input } }
+							placeholder = 'Enter Flock and Farm Name'
+							onChangeText = {text => this.setState (prevState =>
+							{return {language: prevState.language,
+							samples : prevState.samples,
+							flock: text,
+							age: prevState.age};
+							})}
+						/> 
+						<AntDesign name = "plus" size = {30}
 							onPress = {()=> 
 							{			this.textInput.clear()
 							this.setState(prevState =>
@@ -74,15 +84,6 @@ export default class Farm extends React.Component {
 							}
 						/>
 
-						<TextInput 	 ref =       {input => { this.textInput = input } }
-							placeholder = 'Enter Flock and Farm Name'
-							onChangeText = {text => this.setState (prevState =>
-							{return {language: prevState.language,
-							samples : prevState.samples,
-							flock: text,
-							age: prevState.age};
-							})}
-						/> 
 				</View>
 	</View>
 			<View style = {{flexDirection: 'row' }}>
