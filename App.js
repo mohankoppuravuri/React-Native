@@ -1,21 +1,28 @@
-import React 			from 'react';
-import {  
-	createSwitchNavigator, 
-	createAppContainer 
-} 						from 'react-navigation';
+import React, { Component } 					from 'react';  
+import { View,
+		 Text, 
+		 StyleSheet,
+		 Button } 								from 'react-native';  
+import Front									from './components/Front.js'
+import AppContainer								from './components/AppContainer.js'
 
-import Login 			from './components/Login.js'
-import Landing			from './components/Landing.js'
-
-const App = createAppContainer (createSwitchNavigator ({
-	Landing: {
-		screen : Landing
-	} , 
-	Login: {
-		screen : Login
+import {createSwitchNavigator, 
+   		createAppContainer 
+    }					                        from 'react-navigation';
+//r SplashScreen = require('@remobile/react-native-splashscreen')
+const App =  createAppContainer(createSwitchNavigator({
+	Front: {
+	screen: Front
+	},
+	AppContainer: {
+	screen: AppContainer
 	}
-},{
-	initialRouteName: 'Landing'
-}))
-
+},
+	{
+		initialRouteName:  'Front'
+	}
+))   
 export default App;
+	
+
+
