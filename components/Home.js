@@ -21,7 +21,6 @@ import {
 } 							from 'react-navigation';
 
 import CardView 			from './CardView.js'
-import Drop 				from './Drop.js'
 export default class Home extends React.Component {
 	constructor () {
 		super ();
@@ -93,7 +92,6 @@ export default class Home extends React.Component {
 				</View>
 
 				<CardView latitude = {latitude} longitude = {longitude}/>
-				<Drop />
 		</View>			
 		);
 	}
